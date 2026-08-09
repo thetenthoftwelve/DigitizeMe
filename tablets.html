@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="ratings.css" />
+    <title>MakerRater</title>
+</head>
+
+<body width="90%">
+    <header padding="2">
+        <div>DigitizeMe</div>
+        <nav class="top"> <a href="#">HOME</a> <a href="#">REVIEWS</a> <a href="#">WATEVER</a> </nav>
+    </header>
+        <nav class="main"> <a href="index.html">Home</a> <a href="smartphones.html">Smartphones</a> <a href="tablets.html">Tablets</a> <a href="wearables.html">Wearables</a> </nav>
+    <section>
+    <form name="tablet" class="tablet" method="GET">
+        <div class="row-layout">
+            <span class="drop-down">   
+        <label for="ratetablet">Select the tablet<br>you wish to rate</label><br>
+        <select name="ratetablet" id="ratetablet">
+            <option value="samsung">Samsung</option>
+            <option value="apple">Apple</option>
+            <option value="google">Google</option>
+            <option value="motorola">Motorola</option>
+            <option value="kyocera">Kyocera</option>
+            <option value="tlc">TLC</option>
+            <option value="hmd">HMD</option>
+            <option value="nuu">NUU</option>
+            <option value="nokia">Nokia</option>
+            <option value="oneplus">OnePlus</option>
+            <option value="raz">Raz</option>
+            <option value="schok">Schok</option>
+        </select>
+            </span>
+        <!--Why is 'border' orang and italics?-->
+        <table class="rate" border="8" cellpadding="4" cellspacing="5">
+        <thead>
+        <tr>
+            <th>MODEL:</th>
+            <th><input type="text" name="Model" value="" /></th>
+            <th>ADITIONAL COMENTS:</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <label for="battery-life">Battery Life & Charging</label>
+            </td>
+            <td>
+                <input type="radio" name="battery-life" id="1" value="" />
+                <input type="radio" name="battery-life" id="2" value="" />
+                <input type="radio" name="battery-life" id="3" value="" />
+                <input type="radio" name="battery-life" id="4" value="" />
+                <input type="radio" name="battery-life" id="5" value="" />
+            </td>
+            <td>
+                <select name="battery" id="battery">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="performance">Performance</label>
+            </td>
+            <td>
+                <input type="radio" name="performance" id="1" value="" />
+                <input type="radio" name="performance" id="2" value="" />
+                <input type="radio" name="performance" id="3" value="" />
+                <input type="radio" name="performance" id="4" value="" />
+                <input type="radio" name="performance" id="5" value="" />
+            </td>
+            <td>
+                <select name="performance" id="performance">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="camera">Camera</label>
+            </td>
+            <td>
+                <input type="radio" name="camera" id="1" value="" />
+                <input type="radio" name="camera" id="2" value="" />
+                <input type="radio" name="camera" id="3" value="" />
+                <input type="radio" name="camera" id="4" value="" />
+                <input type="radio" name="camera" id="5" value="" />
+            </td>
+            <td>
+                <select name="camera" id="camera">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="display">Display</label>
+            </td>
+            <td>
+                <input type="radio" name="display" id="1" value="" />
+                <input type="radio" name="display" id="2" value="" />
+                <input type="radio" name="display" id="3" value="" />
+                <input type="radio" name="display" id="4" value="" />
+                <input type="radio" name="display" id="5" value="" />
+            </td>
+            <td>
+                <select name="display-quality" id="display-quality">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="audio">Audio</label>
+            </td>
+            <td>
+                <input type="radio" name="audio" id="1" value="" />
+                <input type="radio" name="audio" id="2" value="" />
+                <input type="radio" name="audio" id="3" value="" />
+                <input type="radio" name="audio" id="4" value="" />
+                <input type="radio" name="audio" id="5" value="" />
+            </td>
+            <td>
+                <select name="sound" id="sound">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="software">Software</label>
+            </td>
+            <td>
+                <input type="radio" name="software" id="1" value="" />
+                <input type="radio" name="software" id="2" value="" />
+                <input type="radio" name="software" id="3" value="" />
+                <input type="radio" name="software" id="4" value="" />
+                <input type="radio" name="software" id="5" value="" />
+            </td>
+            <td>
+                <select name="software" id="software">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="build-quality">Build Quality</label>
+            </td>
+            <td>
+                <input type="radio" name="build-quality" id="1" value="" />
+                <input type="radio" name="build-quality" id="2" value="" />
+                <input type="radio" name="build-quality" id="3" value="" />
+                <input type="radio" name="build-quality" id="4" value="" />
+                <input type="radio" name="build-quality" id="5" value="" />
+            </td>
+            <td>
+                <select name="build-quality" id="build-quality">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="physical-size">Physical Size</label>
+            </td>
+            <td>
+                <input type="radio" name="physical-size" id="1" value="" />
+                <input type="radio" name="physical-size" id="2" value="" />
+                <input type="radio" name="physical-size" id="3" value="" />
+                <input type="radio" name="physical-size" id="4" value="" />
+                <input type="radio" name="physical-size" id="5" value="" />
+            </td>
+            <td>
+                <select name="physical-size" id="physical-size">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="weight">Weight</label>
+            </td>
+            <td>
+                <input type="radio" name="weight" id="1" value="" />
+                <input type="radio" name="weight" id="2" value="" />
+                <input type="radio" name="weight" id="3" value="" />
+                <input type="radio" name="weight" id="4" value="" />
+                <input type="radio" name="weight" id="5" value="" />
+            </td>
+            <td>
+                <select name="weight" id="weight">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="value-for-money">Value for Money</label>
+            </td>
+            <td>
+                <input type="radio" name="value-for-money" id="1" value="" />
+                <input type="radio" name="value-for-money" id="2" value="" />
+                <input type="radio" name="value-for-money" id="3" value="" />
+                <input type="radio" name="value-for-money" id="4" value="" />
+                <input type="radio" name="value-for-money" id="5" value="" />
+            </td>
+            <td>
+                <select name="value-for-money" id="value-for-money">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        </table>
+        
+        </div>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

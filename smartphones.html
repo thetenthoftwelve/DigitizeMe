@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="ratings.css" />
+    <title>MakerRater</title>
+</head>
+<body>
+    <header padding="2">
+        <div>DigitizeMe</div>
+        <nav class="top"> <a href="#">HOME</a> <a href="#">RATINGS</a> <a href="#">DISCUSSION</a> </nav>
+    </header>
+    <nav class="main"> <a href="index.html">Home</a> <a href="smartphones.html">Smartphones</a> <a href="tablets.html">Tablets</a> <a href="wearables.html">Wearables</a> </nav>
+
+
+    <section>
+    <form name="smartphone" class="smartphone" method="GET">
+        <div class="row-layout">
+            <span class="drop-down">   
+        <label for="ratephone">Select the phone<br>you wish to rate</label><br>
+        <select name="ratephone" id="ratephone">
+            <option value="samsung">Samsung</option>
+            <option value="apple">Apple</option>
+            <option value="google">Google</option>
+            <option value="motorola">Motorola</option>
+            <option value="kyocera">Kyocera</option>
+            <option value="tlc">TLC</option>
+            <option value="hmd">HMD</option>
+            <option value="nuu">NUU</option>
+            <option value="nokia">Nokia</option>
+            <option value="oneplus">OnePlus</option>
+            <option value="raz">Raz</option>
+            <option value="schok">Schok</option>
+        </select>
+            <br><br>
+        <label for="model">Model:</label>
+        <input type="text" name="model" value="" />
+            </span>
+        <!--Why is 'border' orang and italics?-->
+        <table class="rate" border="8" cellpadding="4" cellspacing="5">
+        <thead>
+        <tr>
+            <th>PARAMETERS:</th>
+            <th>RATING:</th>
+            <!--<th>ADITIONAL COMENTS:</th>-->
+            <th>PROS:</th>
+            <th>CONS:</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <label for="battery-life">Battery Life & Charging</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="battery-life" id="battery-1" value="" />
+            <label for="battery-1">★</label>
+            <input type="radio" name="battery-life" id="battery-2" value="" />
+            <label for="battery-2">★</label>
+            <input type="radio" name="battery-life" id="battery-3" value="" />
+            <label for="battery-3">★</label>
+            <input type="radio" name="battery-life" id="battery-4" value="" />
+            <label for="battery-4">★</label>
+            <input type="radio" name="battery-life" id="battery-5" value="" />
+            <label for="battery-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="battery" id="battery">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="battery-pro" id="battery-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="battery-con" id="battery-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="performance">Performance</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="performance" id="performance-1" value="" />
+            <label for="performance-1">★</label>
+            <input type="radio" name="performance" id="performance-2" value="" />
+            <label for="performance-2">★</label>
+            <input type="radio" name="performance" id="performance-3" value="" />
+            <label for="performance-3">★</label>
+            <input type="radio" name="performance" id="performance-4" value="" />
+            <label for="performance-4">★</label>
+            <input type="radio" name="performance" id="performance-5" value="" />
+            <label for="performance-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="performance" id="performance">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="performance-pro" id="performance-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="performance-con" id="performance-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="camera">Camera</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="camera" id="camera-1" value="" />
+            <label for="camera-1">★</label>
+            <input type="radio" name="camera" id="camera-2" value="" />
+            <label for="camera-2">★</label>
+            <input type="radio" name="camera" id="camera-3" value="" />
+            <label for="camera-3">★</label>
+            <input type="radio" name="camera" id="camera-4" value="" />
+            <label for="camera-4">★</label>
+            <input type="radio" name="camera" id="camera-5" value="" />
+            <label for="camera-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="camera" id="camera">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="camera-pro" id="camera-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="camera-con" id="camera-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="display">Display</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="display" id="display-1" value="" />
+            <label for="display-1">★</label>
+            <input type="radio" name="display" id="display-2" value="" />
+            <label for="display-2">★</label>
+            <input type="radio" name="display" id="display-3" value="" />
+            <label for="display-3">★</label>
+            <input type="radio" name="display" id="display-4" value="" />
+            <label for="display-4">★</label>
+            <input type="radio" name="display" id="display-5" value="" />
+            <label for="display-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="Display Quality" id="Display Quality">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="display-pro" id="display-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="display-con" id="display-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="audio">Audio</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="audio" id="audio-1" value="" />
+            <label for="audio-1">★</label>
+            <input type="radio" name="audio" id="audio-2" value="" />
+            <label for="audio-2">★</label>
+            <input type="radio" name="audio" id="audio-3" value="" />
+            <label for="audio-3">★</label>
+            <input type="radio" name="audio" id="audio-4" value="" />
+            <label for="audio-4">★</label>
+            <input type="radio" name="audio" id="audio-5" value="" />
+            <label for="audio-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="sound" id="sound">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="sound-pro" id="sound-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="sound-con" id="sound-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="software">Software</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="software" id="software-1" value="" />
+            <label for="software-1">★</label>
+            <input type="radio" name="software" id="software-2" value="" />
+            <label for="software-2">★</label>
+            <input type="radio" name="software" id="software-3" value="" />
+            <label for="software-3">★</label>
+            <input type="radio" name="software" id="software-4" value="" />
+            <label for="software-4">★</label>
+            <input type="radio" name="software" id="software-5" value="" />
+            <label for="software-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="software" id="software">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="software-pro" id="software-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="software-con" id="software-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="storage">Storage/RAM</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="storage" id="storage-1" value="" />
+            <label for="storage-1">★</label>
+            <input type="radio" name="storage" id="storage-2" value="" />
+            <label for="storage-2">★</label>
+            <input type="radio" name="storage" id="storage-3" value="" />
+            <label for="storage-3">★</label>
+            <input type="radio" name="storage" id="storage-4" value="" />
+            <label for="storage-4">★</label>
+            <input type="radio" name="storage" id="storage-5" value="" />
+            <label for="storage-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="storage" id="storage">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="storage-pro" id="storage-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="storage-con" id="storage-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="processor">Processor</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="" id="-1" value="processor" />
+            <label for="processor-1">★</label>
+            <input type="radio" name="processor" id="processor-2" value="processor" />
+            <label for="processor-2">★</label>
+            <input type="radio" name="processor" id="processor-3" value="processor" />
+            <label for="processor-3">★</label>
+            <input type="radio" name="processor" id="processor-4" value="processor" />
+            <label for="processor-4">★</label>
+            <input type="radio" name="processor" id="processor-5" value="processor" />
+            <label for="processor-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="processor" id="processor">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="processor-pro" id="processor-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="processor-con" id="processor-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="durability">Durability</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="durability" id="durability-1" value="" />
+            <label for="durability-1">★</label>
+            <input type="radio" name="durability" id="durability-2" value="" />
+            <label for="durability-2">★</label>
+            <input type="radio" name="durability" id="durability-3" value="" />
+            <label for="durability-3">★</label>
+            <input type="radio" name="durability" id="durability-4" value="" />
+            <label for="durability-4">★</label>
+            <input type="radio" name="durability" id="durability-5" value="" />
+            <label for="durability-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="durability" id="durability">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="durability-pro" id="durability-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="durability-con" id="durability-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+                <tr>
+            <td>
+                <label for="customer-service">Customer Service</label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="service" id="service-1" value="" />
+            <label for="service-1">★</label>
+            <input type="radio" name="service" id="service-2" value="" />
+            <label for="service-2">★</label>
+            <input type="radio" name="service" id="service-3" value="" />
+            <label for="service-3">★</label>
+            <input type="radio" name="service" id="service-4" value="" />
+            <label for="service-4">★</label>
+            <input type="radio" name="service" id="service-5" value="" />
+            <label for="service-5">★</label>
+        </div>
+            </td>
+            <!--<td>
+                <select name="customer-service" id="customer-service">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>-->
+            <td>
+                <select name="service-pro" id="service-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="service-con" id="service-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>
+        <!--<tr>
+            <td>
+                <label for=""></label>
+            </td>
+            <td>
+        <div class="star-rating">
+            <input type="radio" name="" id="-1" value="" />
+            <label for="-1">★</label>
+            <input type="radio" name="" id="-2" value="" />
+            <label for="-2">★</label>
+            <input type="radio" name="" id="-3" value="" />
+            <label for="-3">★</label>
+            <input type="radio" name="" id="-4" value="" />
+            <label for="-4">★</label>
+            <input type="radio" name="" id="-5" value="" />
+            <label for="-5">★</label>
+        </div>
+            </td>
+            <td>
+                <select name="" id="">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                </select>
+            </td>
+            <td>
+                <select name="-pro" id="-pro">
+                <option value="pro-1">PRO 1</option>
+                <option value="pro-2">PRO 2</option>
+                <option value="pro-3">PRO 3</option>
+                <option value="pro-4">PRO 4</option>
+                <option value="pro-5">PRO 5</option>
+                </select>
+            </td>
+            <td>
+                <select name="-con" id="-con">
+                <option value="con-1">CON 1</option>
+                <option value="con-2">CON 2</option>
+                <option value="con-3">CON 3</option>
+                <option value="con-4">CON 4</option>
+                <option value="con-5">CON 5</option>
+                </select>
+            </td>
+        </tr>-->
+        </table>
+        </div>
+        </form>
+    </section>
+
+</body>
+</html>
