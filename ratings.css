@@ -78,3 +78,67 @@ label, select {
 .star-rating label {
     color: lightgray;
 }
+
+/* ===== NEW: comment boxes + suggestions ===== */
+.suggest-wrap {
+    position: relative;
+    min-width: 300px;
+}
+
+.suggest-wrap input[type="text"] {
+    width: 100%;
+    font-size: 20px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: 2px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    background: white;
+    border: 1px solid grey;
+}
+
+/* very important: keeps the list hidden when it's empty */
+.suggestions[hidden] {
+    display: none;
+}
+
+.suggestions li {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover,
+.suggestions li.active {
+    background: lightgray;
+}
+
+.suggestions li.ai {
+    font-style: italic;
+}
+
+.comment-message {
+    font-size: 16px;
+    margin: 4px 0 0;
+    min-height: 1em;
+}
+
+#average-rating {
+    font-size: 25px;
+    font-weight: bold;
+}
+.rating-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+}
