@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Lilli web dev"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DigitizeMe"
+	}
+}
