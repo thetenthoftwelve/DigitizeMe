@@ -21,6 +21,7 @@
         <thead>
         <tr>
             <th>PARAMETERS:</th>
+            <th>RATE:</th>
             <th>RATING:</th>
             <th>ADDITIONAL COMMENTS:</th>
         </tr>
@@ -51,6 +52,9 @@
                 <label for="battery-life">Battery Life &amp; Charging</label>
             </td>
             <td>
+                <input type="checkbox" name="battery-check" id="battery-check" checked>
+            </td>
+            <td>
         <div class="star-rating">
             <input type="radio" name="battery-life" id="battery-5" value="5" />
             <label for="battery-5">★</label>
@@ -79,6 +83,9 @@
                 <label for="price">Price</label>
             </td>
             <td>
+                <input type="checkbox" name="battery-check" id="battery-check" checked>
+            </td>
+            <td>
         <div class="star-rating">
             <input type="radio" name="price-rating" id="price-5" value="5" />
             <label for="price-5">★</label>
@@ -105,6 +112,9 @@
         <tr>
             <td>
                 <label for="performance">Performance</label>
+            </td>
+            <td>
+                <input type="checkbox" name="battery-check" id="battery-check" checked>
             </td>
             <td>
         <div class="star-rating">
@@ -216,6 +226,9 @@
                 <label for="software">Software</label>
             </td>
             <td>
+                <input type="checkbox" name="battery-check" id="battery-check" checked>
+            </td>
+            <td>
         <div class="star-rating">
             <input type="radio" name="software" id="software-5" value="5" />
             <label for="software-5">★</label>
@@ -299,6 +312,9 @@
                 <label for="durability">Durability</label>
             </td>
             <td>
+                <input type="checkbox" name="battery-check" id="battery-check" checked>
+            </td>
+            <td>
         <div class="star-rating">
             <input type="radio" name="durability" id="durability-5" value="5" />
             <label for="durability-5">★</label>
@@ -327,6 +343,9 @@
                 <label for="customer-service">Customer Service</label>
             </td>
             <td>
+                <input type="checkbox" name="battery-check" id="battery-check" checked>
+            </td>
+            <td>
         <div class="star-rating">
             <input type="radio" name="service" id="service-5" value="5" />
             <label for="service-5">★</label>
@@ -348,10 +367,15 @@
        </div>
             </td>
         </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3" id="average-rating" style="text-align: center;">No ratings yet</td>
+            </tr>
+        </tfoot>
         </table>
 
         <!-- The average shows up here -->
-        <p id="average-rating">No ratings yet</p>
+       
 
         </div>
     </form>

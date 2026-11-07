@@ -17,11 +17,18 @@ form {
     font-size: 25px;
     font-family: arial;
 }
-header div {
+header > div {
     color: white;
     margin-left: 20px;
     font-size: 75px;
     font-family: arial;
+}
+nav.top .dropdown-menu a {
+    display: block;
+    margin: 0;
+    padding: 12px 20px;
+    font-size: 30px;   /* pick what looks right */
+    white-space: nowrap;
 }
 nav.top {
     font-size: 50px;
@@ -42,7 +49,7 @@ section {
     padding: 20px;
 }
 label, select {
-    font-size: 25px;
+    font-size: 16px;
 }
 .row-layout {
     display: flex;
@@ -138,7 +145,81 @@ label, select {
 .rating-value {
     display: inline-block;
     margin-left: 10px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
     color: green;
+}
+
+#average-rating{
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+padding-top: 15px;
+}
+
+.rate td:nth-child(2),
+.rate th:nth-child(2){
+    text-align: center;
+}
+
+.star-rating input:disabled + label {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.suggest-wrap input:disabled {
+    background: #eee;
+    cursor: not-allowed;
+}
+.rate tfoot td#average-rating {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+/* ===== RATINGS dropdown ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background: darkgreen;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+nav.top .dropdown-menu a {
+    display: block;
+    margin: 0;
+    padding: 12px 20px;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+nav.top .dropdown-menu a:hover {
+    background: green;
+}
+.arrow {
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+
+.dropdown {
+    vertical-align: baseline;
+    line-height: 1;
+}
+
+nav.top a {
+    line-height: 1;
 }
