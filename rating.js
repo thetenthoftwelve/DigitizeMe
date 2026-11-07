@@ -265,7 +265,7 @@ function setupSuggester(wrap) {
             commentMessage.textContent = "Already a suggestion, bumped it up!";
         } else {
             list.push({ text: newComment, count: 1, mood: getMood(newComment) });
-            commentMessage.textContent = "Comment added!";
+           /* commentMessage.textContent = "Comment added!"; */
         }
 
         saveCommentToDb(category, newComment, getMood(newComment), commentMessage);
@@ -354,4 +354,54 @@ function showAverage() {
 
 document.querySelectorAll(".star-rating input").forEach(function (star) {
     star.addEventListener("change", showAverage);
+});
+
+
+//Row on/off checkbox controls stars + comment box
+// ===== Row on/off: checkbox controls stars + comment box =====
+function updateRow(row) {
+    const check = row.querySelector('input[type="checkbox"]');
+    const stars = row.querySelectorAll(".star-rating input");
+    const comment = row.querySelector(".suggest-wrap input");
+    const list = row.querySelector(".suggestions");
+
+    // Unchecked: stars are locked and cleared
+    stars.forEach(function (star) {
+        star.disabled = !check.checked;
+        if (!check.checked) star.checked = false;
+    });
+
+    // Comment box needs: row checked AND a star picked
+    const hasStar = row.querySelector(".star-rating input:checked") !== null;
+    const canComment = check.checked && hasStar;
+
+    comment.disabled = !canComment;
+    if (!check.checked) {
+        comment.placeholder = "Row turned off";
+    } else if (!hasStar) {
+        comment.placeholder = "Pick a star rating first";
+    } else {
+        comment.placeholder = "Write a comment...";
+    }
+
+    if (!canComment) {
+        comment.value = "";
+        list.hidden = true;
+    }
+}
+
+document.querySelectorAll("tr").forEach(function (row) {
+    const check = row.querySelector('input[type="checkbox"]');
+    if (!check) return;
+
+    check.addEventListener("change", function () {
+        updateRow(row);
+        showAverage(); // unchecked rows are cleared, so they drop out of the average
+    });
+
+    row.querySelectorAll(".star-rating input").forEach(function (star) {
+        star.addEventListener("change", function () { updateRow(row); });
+    });
+
+    updateRow(row); // set the starting state when the page loads
 });
