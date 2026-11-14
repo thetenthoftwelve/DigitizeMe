@@ -1,5 +1,5 @@
 header {
-    background-color: green;
+    background-color: rgb(105,56,165);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ nav.top {
     font-size: 50px;
 }
 nav.main {
-    background-color: red;
+    background-color: rgb(183,147,209);
     padding: 15px 0;
     text-align: center;
 }
@@ -223,3 +223,63 @@ nav.top .dropdown-menu a:hover {
 nav.top a {
     line-height: 1;
 }
+
+/*Hero section*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background: rgb(183,147,209, 0.2);
+}
+
+.hero {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background-color:rgb(183,147,209, 0.2);
+   
+    color: black;
+
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+
+.tagline{
+    color: rgb(105,56,165);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.hero h1{
+    font-size: 52px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: rgb(105,56,165);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
